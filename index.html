@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed": "#204a12",
+              "surface-dim": "#e2dbb1",
+              "on-error-container": "#68001f",
+              "primary-dim": "#a70042",
+              "inverse-on-surface": "#a29d88",
+              "on-secondary": "#ecffdd",
+              "secondary": "#3e6a2d",
+              "surface-bright": "#fff9e6",
+              "tertiary": "#755853",
+              "secondary-dim": "#325d22",
+              "surface": "#fff9e6",
+              "tertiary-dim": "#684c48",
+              "on-tertiary-fixed-variant": "#6f534e",
+              "on-surface-variant": "#646042",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#efe9c6",
+              "primary": "#be004c",
+              "error": "#ac3149",
+              "on-secondary-container": "#325d23",
+              "on-primary-fixed-variant": "#8e0037",
+              "surface-variant": "#eae3bd",
+              "secondary-fixed-dim": "#b2e59b",
+              "on-primary-fixed": "#56001e",
+              "on-primary": "#fff7f7",
+              "secondary-container": "#c0f4a8",
+              "outline-variant": "#b9b38f",
+              "on-tertiary": "#fff7f6",
+              "error-container": "#f76a80",
+              "tertiary-fixed": "#fed7d0",
+              "outline": "#807b5b",
+              "on-secondary-fixed-variant": "#3c682c",
+              "inverse-surface": "#100e03",
+              "primary-fixed-dim": "#ff94a7",
+              "error-dim": "#770326",
+              "primary-fixed": "#ffa9b7",
+              "inverse-primary": "#ff4e7c",
+              "secondary-fixed": "#c0f4a8",
+              "on-background": "#363319",
+              "tertiary-fixed-dim": "#efc9c3",
+              "background": "#fff9e6",
+              "surface-container-low": "#faf4d8",
+              "tertiary-container": "#fed7d0",
+              "on-primary-container": "#7d002f",
+              "surface-container-highest": "#eae3bd",
+              "on-error": "#fff7f7",
+              "primary-container": "#ffa9b7",
+              "on-surface": "#363319",
+              "on-tertiary-fixed": "#503733",
+              "surface-container": "#f5eecf",
+              "surface-tint": "#be004c",
+              "on-tertiary-container": "#654945"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fff9e6; color: #363319; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .hero-gradient { background: linear-gradient(135deg, #be004c 0%, #ffa9b7 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-md shadow-sm shadow-stone-200/50 dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-pink-700 dark:text-pink-300 italic font-plus-jakarta-sans tracking-tight">Gelato</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-pink-600 dark:text-pink-400 font-extrabold font-plus-jakarta-sans transition-colors duration-300" href="#">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium font-plus-jakarta-sans hover:text-pink-500 transition-colors duration-300" href="#">Our Craft</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium font-plus-jakarta-sans hover:text-pink-500 transition-colors duration-300" href="#">Find Us</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold tracking-tight hover:scale-105 transition-transform duration-200 shadow-lg shadow-primary/20">
+                Order Now
+            </button>
+</div>
+</nav>
+<main class="pt-24 pb-12">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-8 py-16 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 space-y-6">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-sm font-bold tracking-wider uppercase">Freshly Churned Daily</span>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter text-on-background leading-[0.9]">
+                    The <span class="text-primary italic">Art</span> of the Scoop
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl font-medium leading-relaxed">
+                    Discover our rotating selection of artisanal flavors, crafted with locally sourced dairy and the world's finest natural ingredients.
+                </p>
+</div>
+<div class="flex-1 relative">
+<div class="w-72 h-72 md:w-[450px] md:h-[450px] rounded-full overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 border-[12px] border-surface-container-lowest">
+<img alt="Premium Gelato" class="w-full h-full object-cover" data-alt="Close-up of a perfectly formed pink strawberry gelato scoop in a high-end porcelain bowl with soft natural window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0WxCGyt9uCb8Zo46bo2aiElyegPlik9yaP_J3AFtd8j7fnLy-VS2wFa8kOiqwBEUWrD35DLg-5ZZQ-qoMMMgODgqYQkHbO9BmL7qvtjbZKhp2NYdPGrzDQg2KFTe3cmZEfO6ReK7I5oQHJCkVi1nUpogVld2B5rVMz8ydI_Fdl1yJe9azpShae6ToW5p6WQ7ykhtNjxf8mlXQ7gXz-Zlg9ggLNWJvvfYat_Z8ksxlEDjUQkF0foznBktrp32YjpreLk0fX64-_U-4"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-xl max-w-[200px] hidden md:block">
+<p class="text-primary font-bold italic text-xl">"Pure indulgence in every bite."</p>
+</div>
+</div>
+</header>
+<!-- Flavor Menu Grid -->
+<section class="max-w-7xl mx-auto px-8 mt-12">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+<div>
+<h2 class="text-4xl font-extrabold tracking-tight text-on-background">Signature Collection</h2>
+<p class="text-on-surface-variant mt-2">Filter by dietary preference or explore them all.</p>
+</div>
+<div class="flex gap-3">
+<button class="px-6 py-2 rounded-full bg-surface-container-highest text-on-surface font-semibold hover:bg-primary-container transition-colors">All Flavors</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-low text-on-surface font-semibold hover:bg-secondary-container transition-colors">Vegan</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-low text-on-surface font-semibold hover:bg-secondary-container transition-colors">Gluten-Free</button>
+</div>
+</div>
+<!-- Bento-style Flavor Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Flavor Card 1 (Large Featured) -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low p-8 h-[500px] flex flex-col justify-end">
+<img alt="Sicilian Pistachio" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Macro photo of vibrant green pistachio gelato being scooped, revealing rich texture and crushed pistachio nuts on top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQQCxaRCYwmg4S6zbkX2FOkkim6_EQEjb7E17EPviFbTxTfcxfOpYu7OnMWigCWcFd6pORW8d7IQaFxFdiEeVd8HxDVh6q8EwQK80Wr3RxO4MYeYcQ3USee-gDK-fxZcuOTJ1-SoEGTvB37PaZ5u08wUg5GEkdzJDp-zpS5HmF0q6aQhT5kR_CRbyYez5LL8mcXYmJGiG9f4PTjF97vbJh_ZR7UUMjptp99b-J667ZRWoyiBpv4kv57x1iibJSeidLfoRL2-EwneCw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="relative z-10 text-white">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary text-xs font-bold uppercase tracking-widest">Best Seller</span>
+<span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-bold uppercase tracking-widest">Gluten-Free</span>
+</div>
+<h3 class="text-5xl font-black italic mb-2 tracking-tighter">Sicilian Pistachio</h3>
+<p class="text-white/80 max-w-md text-lg leading-snug">Earthy, roasted Bronte pistachios churned into a velvety, emerald-green masterpiece.</p>
+</div>
+</div>
+<!-- Flavor Card 2 -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-highest p-6 flex flex-col">
+<div class="h-64 rounded-lg overflow-hidden mb-6">
+<img alt="Dark Chocolate Sorbetto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Deep dark chocolate gelato with a matte finish, topped with sea salt flakes and dark chocolate shards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoh04eFhzd3hwB-JVE9wLojtryqT_d2kkV3bof40RFQM3qVukAWgvA-v2nsbY210nNShmyt0kDyo9twpG2E_BBtHdS2HGFCT8OmahZ1h6nAiIZIJSvvULb46k3TqmYqdQyk7ZcnCO557oPjgpFqaOD0rMiRkVwJxLE4igJsOOJr-m8PpdCzwsPyklHG1vjvk7filDnLuLXA6m8PgFWvPvu-zVhflkHhJuqhYhAQPn4-tzhpPddIqyEyH9nv_e3_69vVWwW7a0t29jm"/>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-xs font-bold uppercase text-on-surface-variant tracking-widest">Vegan • Dairy-Free</span>
+</div>
+<h3 class="text-2xl font-bold text-on-background mb-2">Midnight Cacao</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">70% single-origin Tanzanian dark chocolate with a hint of sea salt. Pure, intense, and surprisingly dairy-free.</p>
+</div>
+</div>
+<!-- Flavor Card 3 -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low p-6 flex flex-col">
+<div class="h-64 rounded-lg overflow-hidden mb-6">
+<img alt="Wild Strawberry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pale pink strawberry gelato with swirls of deep red fruit jam and pieces of fresh berry throughout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCErw48uv682nFFoZqpfD4MdV4SLRCXcYzok1VPpm-KWP2ni8q5FcYBZ_fu9dAhqOzhCVC7z-xgt-GzUYaJole--frOZ3VnWEbEt8Or4keLtHwyKpHvaaAIP8WteWZGOUNK5cnmI0eERwqsc2RiSDqjdnfkdEViAbQ1ZDWK6bXxG64xsNIOTEB3lPuMlRxY64tYo2bbmI5Uffv608bA6TXm0g6nXARG2ci3vgpt3T76ywXI4JMF_xeroI6pluSds5MIsIPX5R4OxcPd"/>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-2 h-2 rounded-full bg-pink-400"></span>
+<span class="text-xs font-bold uppercase text-on-surface-variant tracking-widest">Seasonal • GF</span>
+</div>
+<h3 class="text-2xl font-bold text-on-background mb-2">Wild Strawberry</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Hand-picked mountain strawberries swirled into a sweet, creamy vanilla base.</p>
+</div>
+</div>
+<!-- Flavor Card 4 (Horizontal) -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-highest flex flex-col md:flex-row">
+<div class="flex-1 p-8 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+<span class="text-xs font-bold uppercase text-on-surface-variant tracking-widest">Artisan Series</span>
+</div>
+<h3 class="text-3xl font-extrabold text-on-background mb-4">Salted Honey &amp; Lavender</h3>
+<p class="text-on-surface-variant mb-6 text-lg">A floral infusion of French lavender buds with a golden honey swirl and a touch of Maldon salt.</p>
+<div class="flex gap-4">
+<div class="flex items-center gap-1 text-sm font-semibold text-primary">
+<span class="material-symbols-outlined text-sm">eco</span> Locally Sourced
+                            </div>
+<div class="flex items-center gap-1 text-sm font-semibold text-primary">
+<span class="material-symbols-outlined text-sm">check_circle</span> No Additives
+                            </div>
+</div>
+</div>
+<div class="flex-1 relative overflow-hidden min-h-[300px]">
+<img alt="Honey Lavender" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close up of pale purple gelato decorated with dried lavender sprigs and a drizzle of honey under warm sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj71MhzvGTLKyqGJUnzmOEC-sepENsrKm5GOcAV9_Lv3quvhcGBXpPWhbL8aQ2tDeon8T4MNDRC2hEtpHQ0M8bGH3bNHfZ74XvpICwJmPMiVE06dOeY1_ik8Zt4nPnj7z2KDjwCM0lIGuxMXA5zG6SOFBIZcFaaFriMUuMqOYIX2ZJlRUN2RxheRDGgZETLc8lIpJO8OK7iDFlRak2QpyRRcOR-4n3r4lJH2jePlkHoMCOGp5KGJ0RuXSp8hyLchSm3TH3T2U3y3M8"/>
+</div>
+</div>
+<!-- More Flavors Small Grid -->
+<div class="md:col-span-3 group bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<h3 class="font-bold text-lg mb-1">Madagascar Vanilla</h3>
+<p class="text-xs text-on-surface-variant mb-4 uppercase tracking-tighter font-bold">Classic • GF</p>
+<p class="text-sm text-on-surface-variant">Speckled with real vanilla bean seeds and triple-churned for luxury texture.</p>
+</div>
+<div class="md:col-span-3 group bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-secondary">
+<h3 class="font-bold text-lg mb-1">Alphonso Mango</h3>
+<p class="text-xs text-on-surface-variant mb-4 uppercase tracking-tighter font-bold">Vegan • Sorbetto</p>
+<p class="text-sm text-on-surface-variant">Pure sunshine in a scoop. 100% Indian Alphonso mangoes, no sugar added.</p>
+</div>
+<div class="md:col-span-3 group bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<h3 class="font-bold text-lg mb-1">Stracciatella</h3>
+<p class="text-xs text-on-surface-variant mb-4 uppercase tracking-tighter font-bold">Traditional • GF</p>
+<p class="text-sm text-on-surface-variant">Creamy milk base with hand-shaved shards of Belgian milk chocolate.</p>
+</div>
+<div class="md:col-span-3 group bg-primary text-on-primary p-6 rounded-xl shadow-xl flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-4xl mb-2">add_circle</span>
+<h3 class="font-bold text-lg">View 12 More</h3>
+<p class="text-xs opacity-80 mt-1 uppercase tracking-widest font-bold">Seasonal Specials</p>
+</div>
+</div>
+</section>
+<!-- Dietary Legend -->
+<section class="max-w-7xl mx-auto px-8 py-20">
+<div class="bg-surface-container rounded-xl p-10 flex flex-wrap justify-center gap-12 border-outline-variant/20 border">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">energy_savings_leaf</span>
+</div>
+<div>
+<p class="font-bold text-on-background">Vegan</p>
+<p class="text-xs text-on-surface-variant">Plant-based &amp; Dairy-free</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">potted_plant</span>
+</div>
+<div>
+<p class="font-bold text-on-background">Gluten-Free</p>
+<p class="text-xs text-on-surface-variant">No wheat or grains</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">glucose</span>
+</div>
+<div>
+<p class="font-bold text-on-background">Low Sugar</p>
+<p class="text-xs text-on-surface-variant">Natural sweeteners only</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-stone-50 dark:bg-stone-950 tonal-shift bg-stone-100 dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 text-center md:text-left">
+<div class="space-y-4">
+<div class="text-lg font-bold text-stone-800 dark:text-stone-100 font-plus-jakarta-sans">Gelato Artisanal Scoops</div>
+<p class="text-sm font-plus-jakarta-sans leading-relaxed text-stone-500 dark:text-stone-400 max-w-xs">
+                    Crafting moments of frozen joy since 2012. Our mission is to bring authentic Italian craftsmanship to every neighborhood.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-stone-400 hover:text-pink-400 text-sm font-plus-jakarta-sans transition-opacity opacity-80 hover:opacity-100 hover:underline decoration-pink-300 underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-stone-400 hover:text-pink-400 text-sm font-plus-jakarta-sans transition-opacity opacity-80 hover:opacity-100 hover:underline decoration-pink-300 underline-offset-4" href="#">Terms of Service</a>
+<a class="text-stone-400 hover:text-pink-400 text-sm font-plus-jakarta-sans transition-opacity opacity-80 hover:opacity-100 hover:underline decoration-pink-300 underline-offset-4" href="#">Press Kit</a>
+<a class="text-stone-400 hover:text-pink-400 text-sm font-plus-jakarta-sans transition-opacity opacity-80 hover:opacity-100 hover:underline decoration-pink-300 underline-offset-4" href="#">Contact</a>
+</div>
+<div class="text-sm font-plus-jakarta-sans leading-relaxed text-stone-500 dark:text-stone-400 md:text-right">
+                © 2024 Gelato Artisanal Scoops. Hand-crafted with love.
+            </div>
+</div>
+</footer>
+</body></html>
